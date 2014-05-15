@@ -19,13 +19,13 @@ The aim of this project is to **StartUp** a **StartUp** with a working example `
 ### Automated testing
 
 * Codeception - testing framework
-    [ ] Unit tests
-    [ ] Functional tests
-    [x] Acceptance tests
+    - [ ] Unit tests
+    - [ ] Functional tests
+    - [x] Acceptance tests
 * TravisCI - contiuous integration
-    [ ] Unit tests
-    [ ] Functional tests
-    [ ] Acceptance tests
+    - [ ] Unit tests
+    - [ ] Functional tests
+    - [ ] Acceptance tests
     * Continuous delivery/deployment (tag & deploy)
 * Coveralls - code coverage
 * EagleEye - dependency version
