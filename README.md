@@ -48,19 +48,15 @@ It will install everything you need:
 
 ## Running test suite
 
-1. Download Composer
+Build development environment from section above in 1 step with vagrant.
 
-```
-php -r "readfile('https://getcomposer.org/installer');" | php
-```
-
-2. Download dependencies using `Composer`
+1. Download dependencies using `Composer`
 
 ```
 php composer.phar install
 ```
 
-3. Run test suite
+2. Run test suite
 
 ```
 vendor/bin/codecept run
