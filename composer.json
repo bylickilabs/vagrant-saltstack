@@ -1,0 +1,20 @@
+{
+    "name": "dev-confidence/startup-startup",
+    "description": "Working example `Continuous Integration & Delivery` pipeline",
+    "keywords": [
+        "dev confidence",
+        "best practices",
+        "startup startup"
+    ],
+    "homepage": "https://github.com/dev-confidence/startup-startup",
+    "license": [
+        "MIT"
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.8.0",
+        "codeception/codeception": "*"
+    }
+}
