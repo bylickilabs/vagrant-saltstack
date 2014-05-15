@@ -1,3 +1,4 @@
 .patch
 vendor/
 .vagrant/
+tests/_log/acceptance-*
