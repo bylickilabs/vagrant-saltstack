@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/dev-confidence/startup-startup.svg?branch=master)](https://travis-ci.org/dev-confidence/startup-startup)
+
+---
+
 # StartUp-StartUp
 
 The aim of this project is to **StartUp** a **StartUp** with a working example `Continuous Integration & Delivery` pipeline.
