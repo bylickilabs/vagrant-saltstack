@@ -62,13 +62,13 @@ It will install everything you need:
 
 Build development environment from section above in 1 step with vagrant.
 
-1. Download dependencies using `Composer`
+2a. Download dependencies using `Composer`
 
 ```
 php composer.phar install
 ```
 
-2. Run test suite
+2b. Run test suite
 
 ```
 vendor/bin/codecept run
@@ -101,4 +101,4 @@ OK (3 tests, 7 assertions)
 
 ### Viewing Application
 
-1. Got to url `http://localhost:8080`
+3. Got to url `http://localhost:8080`
