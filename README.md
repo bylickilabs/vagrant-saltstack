@@ -16,7 +16,7 @@ The aim of this project is to **StartUp** a **StartUp** with a working example `
 * SaltStack
 
 
-### Automated testing
+### Automated testing & deployment
 
 * Codeception - testing framework
     - [ ] Unit tests
@@ -31,10 +31,16 @@ The aim of this project is to **StartUp** a **StartUp** with a working example `
 * Coveralls - code coverage
 * EagleEye - dependency version
 * Scrutinizer - static code analysis
+* Deploy VM
+    - [ ] Amazon
 
 ---
 
-## Building Development Environment with Vagrant & SaltStack
+## Running Application from Scratch
+
+### Building Development Environment with Vagrant & SaltStack
+
+1. Build VM
 
 ```
 vagrant up
@@ -52,7 +58,7 @@ It will install everything you need:
 
 ---
 
-## Running test suite
+### Running test suite
 
 Build development environment from section above in 1 step with vagrant.
 
@@ -92,3 +98,7 @@ Time: 285 ms, Memory: 9.50Mb
 
 OK (3 tests, 7 assertions)
 ```
+
+### Viewing Application
+
+1. Got to url `http://localhost:8080`
