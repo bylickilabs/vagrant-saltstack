@@ -26,6 +26,10 @@ after_success:
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
   - git push --quiet https://$GITHUBKEY@github.com/dev-confidence/startup-startup $GIT_TAG > /dev/null 2>&1
 
+branches:
+  except:
+    - /^build-[0-9a-z\-]*/
+
 env:
   global:
     secure: RsWeLGe7Ghh+tPeuTO7c/O2SWJWLdpn2X+yE/UFttwNxOhmuRD7evpNBJpd7B0+tfd37Y9mlE3B7TPQvEQlUTDX1FVeFk0HXxYxNEdmPKTZvxQoM1E9yae0KX0/FqujPo0rpsN4PXfqDe/g3CRxa1cI24dBj/9wqpgdAWhYcWN8=
