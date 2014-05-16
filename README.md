@@ -26,7 +26,8 @@ The aim of this project is to **StartUp** a **StartUp** with a working example `
     - [ ] Unit tests
     - [ ] Functional tests
     - [ ] Acceptance tests
-    * Continuous delivery/deployment (tag & deploy)
+    - [x] Continuous Tag (tag on successful build)
+    - [ ] Continuous delivery (deploy on successful build)
 * Coveralls - code coverage
 * EagleEye - dependency version
 * Scrutinizer - static code analysis
