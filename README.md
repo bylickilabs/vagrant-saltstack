@@ -38,9 +38,9 @@ The aim of this project is to **StartUp** a **StartUp** with a working example `
 
 ## Running Application from Scratch
 
-### Building Development Environment with Vagrant & SaltStack
+### 1. Building Development Environment with Vagrant & SaltStack
 
-1. Build VM
+1a. Build VM
 
 ```
 vagrant up
@@ -58,7 +58,7 @@ It will install everything you need:
 
 ---
 
-### Running test suite
+### 2. Running test suite
 
 Build development environment from section above in 1 step with vagrant.
 
@@ -99,6 +99,6 @@ Time: 285 ms, Memory: 9.50Mb
 OK (3 tests, 7 assertions)
 ```
 
-### Viewing Application
+### 3.Viewing Application
 
-3. Got to url `http://localhost:8080`
+3a. Got to url `http://localhost:8080`
