@@ -1,27 +1,21 @@
 language: php
+
 php:
   - 5.4
   - 5.5
 
-
 before_script:
-  # Selenium
-   #- export DISPLAY=:99.0
-   #- sh -e /etc/init.d/xvfb start
-   #- wget http://selenium.googlecode.com/files/selenium-server-standalone-2.35.0.jar
-   #- java -jar selenium-server-standalone-2.35.0.jar -port 4444 &
-   - sudo apt-get install apache2 libapache2-mod-fastcgi
-   # enable php-fpm
-   - sudo cp ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf.default ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf
-   - sudo a2enmod rewrite actions fastcgi alias
-   - echo "cgi.fix_pathinfo = 1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-   - ~/.phpenv/versions/$(phpenv version-name)/sbin/php-fpm
-   # configure apache virtual hosts
-   - sudo cp -f config/vhost-travis.conf /etc/apache2/sites-available/default
-   - sudo sed -e "s?%TRAVIS_BUILD_DIR%?$(pwd)?g" --in-place /etc/apache2/sites-available/default
-   - sudo service apache2 restart
-   - curl -s http://getcomposer.org/installer | php
-   - php composer.phar install --dev --no-interaction
+  - sudo apt-get install apache2 libapache2-mod-fastcgi
+  - sudo cp ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf.default ~/.phpenv/versions/$(phpenv
+    version-name)/etc/php-fpm.conf
+  - sudo a2enmod rewrite actions fastcgi alias
+  - echo "cgi.fix_pathinfo = 1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+  - ~/.phpenv/versions/$(phpenv version-name)/sbin/php-fpm
+  - sudo cp -f config/vhost-travis.conf /etc/apache2/sites-available/default
+  - sudo sed -e "s?%TRAVIS_BUILD_DIR%?$(pwd)?g" --in-place /etc/apache2/sites-available/default
+  - sudo service apache2 restart
+  - curl -s http://getcomposer.org/installer | php
+  - php composer.phar install --dev --no-interaction
 
 script:
   - ./vendor/bin/codecept run
@@ -31,5 +25,8 @@ after_success:
   - git config --global user.name "Travis CI"
   - export GIT_TAG=build-$TRAVIS_BRANCH-$(date -u "+%Y-%m-%d-%H-%M-%S")-$TRAVIS_BUILD_NUMBER
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
-  - git push origin $GIT_TAG
-  
+  - git push origin $GIT_TAG -q https://$GITHUBKEY@github.com/dev-confidence/startup-startup
+
+env:
+  global:
+    secure: iMLHoDz4cZuRuQukzoQN7TQTFxKbGiFY7JQsaiyRdAFzjZ+V2YN/kRGDGR3dHd8xhg7938nbW5p2HLAGd3dsjobECX+TdpXm3I/ChWDWOEu7X3SC3qGFONk3lmSjcGHCZUkJdfGcm42esEVC+UgzQmRvbs3i6/cEcSOoB0CVQn0=
