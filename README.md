@@ -25,12 +25,12 @@ The aim of this project is to **StartUp** a **StartUp** with a working example `
 * TravisCI - contiuous integration
     - [ ] Unit tests
     - [ ] Functional tests
-    - [ ] Acceptance tests
+    - [x] Acceptance tests
     - [x] Continuous Tag (tag on successful build)
     - [ ] Continuous delivery (deploy on successful build)
-* Coveralls - code coverage
-* EagleEye - dependency version
-* Scrutinizer - static code analysis
+* [ ] Coveralls - code coverage
+* [ ] EagleEye - dependency version
+* [ ] Scrutinizer - static code analysis
 * Deploy VM
     - [ ] Amazon
 
