@@ -6,15 +6,32 @@
 
 The aim of this project is to **StartUp** a **StartUp** with a working example `Continuous Integration & Delivery` pipeline.
 
+## Latest Technologies & Services used:
+
+* Github
+* Travis CI
+
+## Continuous Integration & Deployment
+
+1. Write Tests & Code (TDD)
+2. Commit & Push to Github for `Code Review` as Pull Request
+3. Other team member reviews Pull Request & comments accordingly
+4. Travis CI builds all branches (inc. Pull Requests) & runs all tests (unit, functional, acceptance) 
+5. Coveralls runs `Code Coverage` report
+6. Scrutinizer runs `Static Code Analysis` report
+6. If `step 4` is **successful**: 
+     a. Create Git Tag / Release on Github (these are release candidates)
+     b. Deploy Git Tag to `CI environment`
+7. Test on `CI environment`
+8. Deploy to `Test environment` from any `tag / release` as required
+
+![Continuous Delivery Diagram](https://raw.githubusercontent.com/dev-confidence/startup-startup/master/docs/img/continuous_delivery.png)
+
+[Continuous Delivery Diagram (original)](https://raw.githubusercontent.com/dev-confidence/startup-startup/master/docs/img/continuous_delivery.png)
+
 ---
 
 ## Overview
-
-### Environment
-
-* Vagrant
-* SaltStack
-
 
 ### Automated testing & deployment
 
