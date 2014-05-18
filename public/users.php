@@ -6,9 +6,11 @@
     </head>
     <body>
 
+        <p><?php echo file_get_contents('version'); ?></p>
+
         <div>
             <h1>Dev Confidence StartUp-StartUp</h1>
-            <a href="/index.html">Home</a>
+            <a href="/index.php">Home</a>
             <p>Welcome, Mickey!</p>
 
             <h2>Users</h2>

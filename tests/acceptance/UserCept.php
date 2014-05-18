@@ -1,7 +1,7 @@
 <?php
 $wg = new WebGuy($scenario);
 $wg->wantTo('ensure that user list page works');
-$wg->amOnPage('/users.html');
+$wg->amOnPage('/users.php');
 $wg->see('Users');
 $wg->see('User 1');
 $wg->see('User 2');
