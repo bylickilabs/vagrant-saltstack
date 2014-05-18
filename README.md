@@ -91,7 +91,7 @@ php composer.phar install
 vendor/bin/codecept run
 ```
 
-Example output
+##### Example output
 
 ```
 vagrant@precise64:/var/www/dev-confidence/startup-startup$ vendor/bin/codecept run

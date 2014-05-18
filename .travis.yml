@@ -28,6 +28,9 @@ after_success:
   - git push --quiet https://$GITHUBKEY@github.com/dev-confidence/startup-startup $GIT_TAG > /dev/null 2>&1
   # PUSH TO WEBSERVER
 
+notifications:
+  slack: devconfidence:TLbWAofg2DzzxDo9uHcKveqk
+
 branches:
   except:
     - /^build-[0-9a-z\-]*/
