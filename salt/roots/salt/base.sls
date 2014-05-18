@@ -14,3 +14,11 @@ bwm-ng:
     pkg:
         - installed
 
+curl:
+    pkg:
+        - installed
+
+elinks:
+    pkg:
+        - installed
+
