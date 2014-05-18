@@ -10,6 +10,7 @@ The aim of this project is to **StartUp** a **StartUp** with a working example `
 
 * Github
 * Travis CI
+* DeployHQ
 
 ## Continuous Integration & Deployment
 
