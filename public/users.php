@@ -6,7 +6,7 @@
     </head>
     <body>
 
-        <p><?php echo file_get_contents('version'); ?></p>
+        <p>version: <?php echo file_get_contents('version'); ?></p>
 
         <div>
             <h1>Dev Confidence StartUp-StartUp</h1>
