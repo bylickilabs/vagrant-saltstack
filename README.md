@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/dev-confidence/startup-startup.svg?branch=master)](https://travis-ci.org/dev-confidence/startup-startup)
-
+ [![Dependency Status](https://www.versioneye.com/user/projects/537d7c9514c158119f0000af/badge.svg)](https://www.versioneye.com/user/projects/537d7c9514c158119f0000af)
+ 
 ---
 
 # StartUp-StartUp
