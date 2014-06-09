@@ -13,6 +13,6 @@
             <a href="/login.php">Login</a>
             <p>Home</p>
         </div>
- <p>test infomrmation</p>
+
     </body>
 </html>
