@@ -3,8 +3,7 @@ php:
 - 5.5
 before_script:
 - sudo apt-get install apache2 libapache2-mod-fastcgi
-- sudo cp ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf.default ~/.phpenv/versions/$(phpenv
-  version-name)/etc/php-fpm.conf
+- sudo cp ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf.default ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf
 - sudo a2enmod rewrite actions fastcgi alias
 - echo "cgi.fix_pathinfo = 1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 - ~/.phpenv/versions/$(phpenv version-name)/sbin/php-fpm
@@ -20,8 +19,7 @@ after_success:
 - git config --global user.name "Travis CI"
 - export GIT_TAG=build-$TRAVIS_BRANCH-$(date -u "+%Y-%m-%d")-$TRAVIS_BUILD_NUMBER
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
-- git push --quiet https://$GITHUBKEY@github.com/dev-confidence/startup-startup $GIT_TAG
-  > /dev/null 2>&1
+- git push --quiet https://$GITHUBKEY@github.com/dev-confidence/startup-startup $GIT_TAG > /dev/null 2>&1
 notifications:
   slack: devconfidence:TLbWAofg2DzzxDo9uHcKveqk
 branches:
