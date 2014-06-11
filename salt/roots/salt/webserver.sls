@@ -35,4 +35,6 @@ php5-pkgs:
               - php5-dev
               - php-pear
               - php5-gd
-
+              - php5-intl
+              - php5-mysql
+              - php5-pgsql
