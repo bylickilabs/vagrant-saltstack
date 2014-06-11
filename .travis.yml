@@ -21,8 +21,6 @@ after_success:
   - export GIT_TAG=build-$TRAVIS_BRANCH-$(date -u "+%Y-%m-%d")-$TRAVIS_BUILD_NUMBER
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
   - git push --quiet https://$GITHUBKEY@github.com/dev-confidence/startup-startup $GIT_TAG > /dev/null 2>&1
-  # SET TAG ON HEROKU
-  - heroku config:set GITHUB_RELEASE=$GIT_TAG
 notifications:
   slack: devconfidence:TLbWAofg2DzzxDo9uHcKveqk
 branches:
@@ -38,3 +36,4 @@ deploy:
   app: startup-startup
   on:
     repo: dev-confidence/startup-startup
+  run: "echo $GIT_TAG > public/version"
