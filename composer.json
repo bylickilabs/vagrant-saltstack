@@ -15,6 +15,7 @@
     },
     "require-dev": {
         "mockery/mockery": "0.8.0",
-        "codeception/codeception": "*"
+        "codeception/codeception": "*",
+        "heroku/heroku-buildpack-php": "*"
     }
 }
